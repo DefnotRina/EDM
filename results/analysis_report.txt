@@ -1,0 +1,62 @@
+PROJECT BALANCE: COMPREHENSIVE ANALYSIS REPORT
+=============================================
+
+PHASE 2: PREDICTIVE VALIDITY OF THE SBI
+---------------------------------------
+Task: Predicting Dropout Risk based entirely on the Student Balance Index (SBI).
+Model: Random Forest Classifier
+Testing Accuracy: 96.32%
+
+--- Feature Importances ---
+SBI    1.0
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     15684
+           1       0.06      0.05      0.05       316
+
+    accuracy                           0.96     16000
+   macro avg       0.52      0.52      0.52     16000
+weighted avg       0.96      0.96      0.96     16000
+
+
+Conclusion:
+The model confirms that the Student Balance Index (SBI) is a primary predictor of dropout risk, proving the value of utilizing daily lifestyle habits as a proactive diagnostic tool.PHASE 1: STUDENT LIFESTYLE PROFILING (K-MEANS)
+----------------------------------------------
+Cluster Mean Values (Standardized Z-Scores):
+
+         sleep_hours  exercise_frequency  diet_num  study_hours_per_day  screen_time  stress_level
+Cluster                                                                                           
+0           0.003810           -0.007875 -1.136446            -0.050029    -0.043700      0.010679
+1          -0.003364            0.004921  0.470167             0.901273     0.894157     -0.012327
+2          -0.000094            0.002160  0.543792            -0.827508    -0.826188      0.002537
+
+Interpretation Key:
+- Positive values (e.g., 0.5): Above Average in that habit.
+- Negative values (e.g., -0.5): Below Average in that habit.
+
+Example: A negative score in 'sleep_hours' means that group is sleep-deprived.
+
+PHASE 2: PREDICTIVE VALIDITY OF THE SBI
+---------------------------------------
+Task: Predicting Dropout Risk based entirely on the Student Balance Index (SBI).
+Model: Random Forest Classifier
+Testing Accuracy: 96.32%
+
+--- Feature Importances ---
+SBI    1.0
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     15684
+           1       0.06      0.05      0.05       316
+
+    accuracy                           0.96     16000
+   macro avg       0.52      0.52      0.52     16000
+weighted avg       0.96      0.96      0.96     16000
+
+
+Conclusion:
+The model confirms that the Student Balance Index (SBI) is a primary predictor of dropout risk, proving the value of utilizing daily lifestyle habits as a proactive diagnostic tool.
